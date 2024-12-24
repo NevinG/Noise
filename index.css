@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 8px;
+}
+
+#body-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#test {
+  width: 100%;
+  height: 100%;
+}
+
+#canvas-container {
+  flex: 1;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 100%;
+  image-rendering: pixelated; /* Ensure sharp rendering of pixels */
+}
+
+p {
+  margin: 0;
+  font-size: small;
+  font-family: monospace;
+  width: 100%;
+  word-break: break-all;
+}

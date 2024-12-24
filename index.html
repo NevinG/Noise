@@ -6,9 +6,15 @@
       <title>Noise  </title>
       <link rel="stylesheet" href="index.css">
       <script src="index.js" defer></script>
+      <script src='https://cdn.jsdelivr.net/npm/big.js@6.2.2/big.min.js'></script>
   </head>
   <body>
-    <h1 id="title" style="text-align: center;">Noise</h1>
-    <input type="range" style="width: 100%;" step=".001" oninput="updateTitle(this.value)">
+    <div id="body-container">
+      <p id="current-value">0</p>
+      <input id="slider" value="0" min="0" max="1000" step="1" type="range" style="width: 100%;">
+      <div id="canvas-container">
+        <canvas id="noiseCanvas"></canvas>
+      </div>
+    </div>
   </body>
 </html>
